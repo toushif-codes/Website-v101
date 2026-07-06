@@ -1,0 +1,1144 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+.main-card{
+  display: flex;
+    flex-direction: column; /* Content upar se niche lagega */
+    align-items: center;    /* Horizontal center */
+    justify-content: center; /* Vertical center */
+    padding: 0px;
+}
+.hero-image{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    
+    /* Purana mix-blend-mode aur filter hata dena, warna colors ajeeb aayenge */
+    
+    /* Yeh raha tumhara Edge Fade (Masking) ka code */
+
+}
+/* 1. Wrapper ko relative position dein */
+.image-wrapper {
+    position: relative;
+    width: 100%; /* Image jitni badi, utna wrapper */
+       /* Poore container ko center mein laane ke liye */
+    
+}
+
+/* 2. Button ko absolute position dein */
+.float-button {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    
+    /* Center karne ke liye initial state */
+    transform: translateX(-50%); 
+    font-size: 15px;
+    
+    background-color: white;
+    color: #0047ab;
+    padding: 5px 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+   border-radius:5px;
+    
+    /* Animation call karna - YE LINE ZAROORI HAI */
+    animation: bounce-animation 2s ease-in-out infinite;
+}
+
+/* Animation ka rule - Ise class ke bahar likhna */
+@keyframes bounce-animation {
+    0% { transform: translateX(-50%) translateY(0px); }
+    50% { transform: translateX(-50%) translateY(-5px); } /* 15px upar jayega */
+    100% { transform: translateX(-50%) translateY(0px); }
+}
+  /* Reset code: Sabse upar daalna */
+
+
+/* Mobile ke liye (Default) */
+.doctor-section {
+    width: 100%;
+    margin-top: 15px; /* Upar se gap */
+    display: flex;
+    justify-content: flex-start; /* Left mein chipka diya */
+    align-items: center;
+    padding-left: 10px; /* Left edge se halka gap */
+    
+}
+
+.doctor-image {
+    width: 150px; /* Mobile pe chhota */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.doctor-info {
+    margin-left:15px;
+    /* Image aur text mein gap */
+}
+.doctor-name {
+    color: white !important;
+    background-color: #0047ab;
+    display: inline-block;
+    margin-top:-10px; margin-bottom: 8px;
+    margin-left: 0px;
+    border-radius:0px 0px 8px 8px;
+    padding: 1px 28px 1px 28px;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+
+.menu-dots {
+    position: absolute; /* Image ke upar float karne ke liye */
+    top: 15px;          /* Upar se gap */
+    right: 15px;        /* Right side mein fix karne ke liye */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;           /* Dots ke beech ki jagah */
+    z-index: 1000;      /* Sabse upar dikhne ke liye */
+}
+
+.menu-dots span {
+    width: 3px;
+    height: 3px;
+    background-color: white; /* Dots ka color */
+    border-radius: 50%;
+}
+
+.home-button-icon {
+    width: 40px; 
+    height: 40px;
+    color: white;
+  }
+
+
+.treatment-result {
+    padding-top: 0px;
+    width: 100%;              /* Ye line add karo (Poori width lega) */
+    display: block;           /* Ye line add karo */
+    text-align: center !important; /* !important lagane se koi aur CSS isko override nahi kar payegi */
+    color: black;
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    margin: 0;                /* Extra margin hatane ke liye */
+}
+
+
+/* Grid container ka layout */
+.cards-grid {
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Har card ki styling alag honi chahiye */
+.card1 {
+  margin-top:none;
+    border: 2px solid #0047ab; 
+    background-color: #eee;
+    height: 150px;
+    width: 100%;
+    border-radius:10px;
+}
+.card2 {
+    border: 2px solid #0047ab; 
+    background-color: #eee;
+    height: 150px;
+    width: 100%;
+    border-radius:10px;
+}
+.card3 {
+    border: 2px solid #0047ab; 
+    background-color: #eee;
+    height: 150px;
+    width: 100%;
+    border-radius:10px;
+}
+.card4 {
+    border: 2px solid #0047ab; 
+    background-color: #eee;
+    height: 150px;
+    width: 100%;
+    border-radius:10px;
+}
+.card-image1{
+  object-fit: cover;
+  border-radius: 8px;
+}
+.care{
+  color:  #0047ab;
+  padding-left: none;
+}
+.logo{
+  display:flex;
+
+}
+.logo-text{
+  font-size: 20px;
+  font-family: 'Montserrat',serif;
+}
+.teeth-logo{
+ height: 40px;
+ width: 30px
+  
+}
+.dental-1{
+  display: block;
+  margin-top: 0;
+  padding-left:0px;;
+  font-family: '',serif;
+  font-size:10px;
+}
+.navbar {
+    padding-left:10px;display: flex;
+    justify-content: space-between; /* Yeh icon ko right side bhej dega */
+    align-items: center; /* Vertical alignment ke liye */
+}
+.menu-icon{
+  font-size: 30px;
+  
+}
+.trust-wala {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 5px 10px 5px 10px; /* Top: 5px, Right: 10px, Bottom: 5px, Left: 10px */
+  font-size: 10px;
+  background-color: #b3d5f5;
+  display:inline-block;
+  border-radius: 10px;
+  color: #0047ab;
+}
+
+.smile-wala{
+  display: block;
+  margin-left: 0px;
+  margin-top: 0px ;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 30px; /* Aap size apne hisaab se adjust karein */
+  color: #1a1a1a;  /* Dark grey/black color */
+  line-height: 1.2;
+  padding-left: 15px;
+}
+.life-time{
+  color:#0047ab;
+  padding-left: 4.5px;
+  
+}
+.gentle-touch{
+  margin-top:0px;
+  padding-left:20px;
+}
+
+.dental-stats-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 40px;
+  max-width: 800px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+}
+
+.dental-stat-item {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+/* Left wale items ke baad vertical line */
+.dental-stat-item:nth-child(1),
+.dental-stat-item:nth-child(3) {
+  border-right: 1.5px solid #dcdcdc; 
+}
+
+.dental-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+.icon-png1{
+  margin-top:4px;
+  width: 65px;       /* Image ko dabbe ke barabar lamba karega */
+  height:70px;      /* Image ko dabbe ke barabar uncha karega */
+  /* Image ko pichakne (stretch hone) se bachayega aur perfect fit karega */
+  display: block;    /* Niche aane wale extra chote gap ko hatayega */
+  border-radius: 50px;
+  border:0;
+
+}
+.icon-png2{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  
+}
+.icon-png3{
+  width: 35px;
+  height: 45px;
+  object-fit;
+
+}
+.icon-png4{
+  margin-top:4px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.dental-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.dental-text h3 {
+  margin: 0 0 3px 0;
+  color: #0f3d7a;
+  font-size: clamp(16px, 4vw, 30px); 
+  font-weight: bold;
+}
+
+.dental-text p {
+  margin: 0;
+  color: #444;
+  font-size: clamp(11px, 2.5vw, 18px);
+}
+
+
+
+
+
+.expert{
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-color:#0047ab;
+  text-decoration-thickness:2px;
+  text-underline-offset:6px;
+ 
+}
+.treatment-card{
+ border-radius: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.real-transformation{
+  color:#0047ab;
+  padding-top: 20px; /* margin-top ki jagah padding-top use karein */
+  margin-top: 0px; /* Purana margin hata dein taaki koi extra gap na aaye */
+  text-align: center;
+}
+.card1 {
+  /* Agar pehle se koi padding di hai, toh usko 0 kar dein */
+  padding: 0px; 
+  /* Box ke kinare gol karne ke liye (agar border-radius diya hai toh) */
+  border-radius: 10px; 
+  /* Yeh zaroori hai, isse image dabbe ke bahar nahi jayegi */
+  overflow: hidden; 
+}
+
+
+.card-image1 {
+  width: 100%;       /* Image ko dabbe ke barabar lamba karega */
+  height: 100%;      /* Image ko dabbe ke barabar uncha karega */
+  object-fit: cover; /* Image ko pichakne (stretch hone) se bachayega aur perfect fit karega */
+  display: block;    /* Niche aane wale extra chote gap ko hatayega */
+}
+.what-we-offer{
+    color:#0047ab;
+  padding-top: 20px; /* margin-top ki jagah padding-top use karein */
+  margin-top: 0px; /* Purana margin hata dein taaki koi extra gap na aaye */
+  text-align: center;
+  font-size: 15px;
+  
+  
+}
+.service{
+ margin-top: -20px;
+ font-family: 'Times New Roman', serif;
+  color:black;
+  text-decoration: underline;
+  text-decoration-color:#0047ab;
+  text-decoration-thickness:2px;
+  text-underline-offset: 6px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/*Grid Container: Isko 2 columns mein divide karne ke liye */
+.service-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Do barabar columns */
+    gap: 15px; /* Cards ke beech ka gap */
+    padding: 20px;
+    justify-items: Center;
+}
+
+.serv1, .serv2, .serv3, .serv4,.serv5, .serv6, .serv7, .serv8 {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+
+    /* Blue color ka border */
+    border-radius: 15px; /* Corners ko gol karne ke liye */
+    min-height: 100px;
+    max-height: 300px;
+    min-width:100px;
+    max-width:300px;
+    /* Box ki height set karne ke liye (warna khali box pichak jayenge) */
+    overflow: hidden; /* Yeh zaruri hai taaki image border ke bahar na nikle */
+    display:columns;
+    
+}
+
+.serv-image1{
+ height: 50px;
+    object-fit: cover;
+    margin: auto;
+    display: flex;
+justify-content: center; /* Horizontally center ke liye */
+align-items: center;     /* Vertically center ke liye */
+margin-top: 15px;
+
+}
+.serv-title{
+  margin-top:10px;
+  font-size: 15px;
+  display: flex;
+  justify-content: Center;
+  align-items: center;
+}
+.serv-title2{
+  margin-top:-20px;
+  font-size: 15px;
+  display: flex;
+  justify-content: Center;
+  align-items: center;
+}
+  
+
+.choose{
+  border-radius:20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  }
+
+.choose-us{
+  padding-top: 20px;
+  display: flex;
+    flex-direction: column; /* Image aur text ko ek ke niche ek (column) mein rakhega */
+    align-items: center;    /* Dono ko horizontal (left-right) center mein kar dega */
+    justify-content: center;/* Dono ko vertical (top-bottom) center mein kar dega */
+    text-align: center; 
+    color:#0047ab ;
+}
+.features-container {
+  display: flex;
+  flex-direction: column; /* Ye blocks ko vertical rakhega */
+  gap: 20px;
+  padding-right:20px;
+  margin-top: -20px;
+}
+
+.feature-box {
+  display: flex; /* Ye image aur text ko side-by-side layega */
+  align-items: flex-start;
+  gap: 15px; /* Image aur text ke beech thodi jagah */
+}
+
+.feature-icon {
+  width: 50px; /* Icon ka size */
+  flex-shrink: 0;
+  padding-top:20px;/* Isse image shrink nahi hogi */
+}
+
+.feature-icon img {
+  width: 100%;
+}
+.google-review-box{
+  padding-top: 10px;
+  display: flex;
+    flex-direction: column; /* Image aur text ko ek ke niche ek (column) mein rakhega */
+    align-items: center;    /* Dono ko horizontal (left-right) center mein kar dega */
+    justify-content: center;/* Dono ko vertical (top-bottom) center mein kar dega */
+    text-align: center; 
+    color:#0047ab ;
+}
+.section-title{
+  flex-direction: column;
+      align-items: center;
+      justify-content: center;/* Dono ko vertical (top-bottom) center mein kar dega */
+    text-align: center; 
+    font-family: 'Times New Roman', serif;
+  font-size: 20px;
+}
+/* --- Review Section Main Container --- */
+.reviews-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fafbfc; /* Image jaisa light background */
+  font-family: sans-serif;
+}
+
+.section-subtitle {
+  color: #1a73e8;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.section-title {
+  color: #0b1c3c;
+  font-size: 26px;
+  margin-bottom: 30px;
+  margin-top: 0;
+  font-family: serif; /* Serif font for elegant look */
+}
+
+/* --- The Slider Magic --- */
+.slider-container {
+  display: flex;
+  gap: 20px; /* Cards ke beech ka gap */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 20px; /* Ye padding badha di gayi hai taaki shadow cut na ho */
+  scrollbar-width: none;
+}
+
+.slider-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari me scrollbar hide karega */
+}
+
+/* --- Review Card Design --- */
+.review-card {
+  flex: 0 0 85%; /* BADLAV: Ab card screen ka 85% lega, fixed pixels nahi. Isse agla card thoda sa dikhega. */
+  max-width: 320px; /* Card isse zyada bada nahi hoga */
+  box-sizing: border-box; /* Padding ko width ke andar rakhega */
+  
+  /* Baaki aapka purana design same rahega */
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  scroll-snap-align: center;
+  text-align: left;
+}
+  
+
+.stars {
+  color: #f59e0b; /* Orange/Yellow color stars ke liye */
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.review-text {
+  color: #4a5568;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* --- Reviewer Profile --- */
+.reviewer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+
+/* --- Bottom Dots Design --- */
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #cbd5e1;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #1a73e8; /* Blue color */
+  width: 25px; /* Active dot ko lamba (elongated) banata hai */
+  border-radius: 10px;
+ 
+}
+
+
+.reviewer-img1,.reviewer-img2{
+  margin-top: 25px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%; /* Image ko gol (round) banata hai */
+  object-fit: cover;
+  background-color: #e2e8f0; /* Agar image load na ho toh yeh color dikhega */
+  
+}
+.reviewer-img3 {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%; /* Image ko gol (round) banata hai */
+  object-fit: cover;
+  background-color: #e2e8f0; /* Agar image load na ho toh yeh color dikhega */
+}
+.reviewer-name3 {
+  font-weight: bold;
+  color: #0b1c3c;
+  font-size: 15px;
+}
+.reviewer-name1,.reviewer-name2 {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #0b1c3c;
+  font-size: 15px;
+}
+.appointment20{
+  height: auto;
+  width: 300px;
+  
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: #edf6fc;
+  margin: 0 auto;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+.appointment2img{
+  margin-top: 15px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+height: 40px;
+width: 40px;
+border-radius: 50px;
+}
+.BookYourAppointment{
+  margin-top: 10px;color: black;
+  font-size: 20px;
+  font-family: 'Times New Roman', serif;
+  
+}
+.help-you{
+  margin-top:-15px;
+}
+.help-you2{
+  margin-top:-15px;
+}
+.button2{
+  border-radius:10px;
+  color:white ;
+  background-color:#0047ab;
+  padding: 10px;
+  border:none;
+  margin-bottom: 20px;
+  cursor: pointer; 
+    position: relative; 
+    z-index: 10;
+  
+  
+}
+/* Footer ka Main Background */
+.clinic-footer {
+  margin-top:20px;
+  padding:none;
+    background-color: #002244; /* Dark Blue */
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Content ko center me rakhne ke liye */
+.footer-container {
+    max-width: 450px; 
+    margin: 0 auto;
+}
+
+/* Logo Section */
+.brand-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.logo-icon {
+    width: 33px;
+    height: 35px;
+    object-fit: r;
+    border-radius: 50%;
+}
+.brand-text h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2;
+}
+.brand-text p {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    margin: 0;
+    color: #a8b8d0;
+}
+
+/* Description Text */
+.footer-description {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #e0e0e0;
+    margin-bottom: 25px;
+}
+
+/* Social Media Circles */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.fb-icon,.ig-icon,.wa-icon,.yt-icon{
+   height: 40px;
+   width: 40px;/* 2. Height bhi width ke barabar rakho */
+    object-fit:cover; /* 3. 🪄 MAGIC: Isse image stretch nahi hogi */
+    border-radius:50%;
+}
+.social-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #0b53c1; /* Bright Blue */
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+
+/* Quick Links Grid */
+.quick-links-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.links-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.link-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.link-column a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 15px;
+}
+.link-column a:hover {
+    text-decoration: underline;
+}
+
+/* Divider Line */
+.footer-divider {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 25px;
+}
+
+/* Contact Info (Icons + Text) */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    object-fit: cover;
+    border-radius:50%;
+}
+
+.contact-item span {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #e0e0e0;
+}
+
+/* Map Image Styling */
+.map-location {
+    width: 100%;
+    height: 130px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+/* Full Width Button */
+.footer-book-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #004aad; /* Darker Bright Blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+/* Bottom Copyright */
+.copyright {
+    text-align: center;
+    font-size: 13px;
+    color: #a8b8d0;
+    line-height: 1.6;
+}
+.copyright p {
+    margin: 0;
+}
+/* --- Mobile Dropdown Box Design --- */
+.mobile-dropdown {
+    display: none; /* Shuru mein box chupa rahega */
+    position: absolute;
+    top: 70px; /* Navbar ke neeche laane ke liye */
+    right: 5%; /* Right side se thodi jagah */
+    background-color: #ffffff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Box ke peeche halki si shadow */
+    border-radius: 8px; /* Box ke kone gol karne ke liye */
+    padding: 15px;
+    width: 180px;
+    z-index: 1000; /* Taaki box baaki sabke upar dikhe */
+    flex-direction: column;
+    gap: 12px; /* Links ke beech ka gap */
+}
+
+/* Ye class aane pe box dikhega */
+.mobile-dropdown.show-menu {
+    display: flex; 
+}
+
+/* Dropdown ke andar ke links ka design */
+.mobile-dropdown a {
+    text-decoration: none;
+    color: #1a2b4c;
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eaeaea; /* Har link ke neeche halki line */
+}
+
+/* Sabse aakhri link ke neeche line na aaye uske liye */
+.mobile-dropdown a:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+/* ==================================================== */
+/* DESKTOP VIEW - SAB KUCH BADA KARNE KE LIYE (SCALE UP) */
+/* ==================================================== */
+
+@media (min-width: 980px) {
+    
+    /* 1. Entire body scale up */
+    body {
+        zoom: 1.1; /* Poore webpage ko 10% bada kar dega */
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 2. Main containers ko chaurai (width) dena taaki poori screen cover ho */
+    .main-card {
+        max-width: 1200px;
+        margin: 0 auto; /* Center alignment */
+    }
+    
+    .footer-container {
+        max-width: 1200px; /* Footer jo mobile me 450px tha usko bada kiya */
+        margin: 0 auto;
+    }
+
+    /* 3. Text aur Fonts ko bohot bada karna */
+    .smile-wala {
+        font-size: 55px; /* Pehle 30px tha */
+        padding-left: 50px;
+        text-align: left;
+        margin-top: -360px;
+    }
+   
+   
+ 
+    .trust-wala{
+      font-size: 20px; /* Pehle 30px tha */
+      margin-top: -70px;
+        padding:4px !important;
+        text-align: center;
+        margin-left: 50px;
+      
+    }
+    .menu-icon{
+      margin-top:-20px;
+    }
+
+    .gentle-touch {
+        font-size: 22px;
+        text-align: left;
+        padding-left: 50px;
+        margin-top: -40px;
+    }
+    
+    .dental-text h3 {
+        font-size: 40px !important;
+    }
+    
+    .dental-text p {
+        font-size: 20px !important;
+    }
+    
+    .section-title {
+        font-size: 40px;
+    }
+    
+    .service {
+        font-size: 35px;
+    }
+
+    /* 4. Grids ko Desktop ke hisaab se adjust & bada karna (4 in a row) */
+    .cards-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 cards ek line mein */
+        gap: 30px;
+    }
+    
+    .card1, .card2, .card3, .card4 {
+        height: 250px; /* Cards ki height lumbi kar di */
+    }
+
+  .service-grid {
+    grid-template-columns: repeat(4, 1fr); /* Services bhi 4 ek line mein */
+    gap: 30px;
+    justify-items: stretch; /* IMPORTANT: Agar mobile wale code me justify-items: center reh gaya hoga, toh yeh usko theek kar dega */
+}
+
+.serv1, .serv2, .serv3, .serv4, .serv5, .serv6, .serv7, .serv8 {
+    min-height: 220px; /* Service dabbo ko bada kiya */
+    height: 100%; /* YEH ADD KIYA: Taki saare cards ek dam barabar stretch ho */
+    max-width: 100%; /* Mobile wale max-width ko hatane ke liye */
+    
+    /* Content ko center me properly align karne ke liye flexbox lagaya */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+    .serv-image1 {
+        height: 80px; /* Icons ko bada kiya */
+        margin-top: 30px;
+    }
+    
+    .serv-title, .serv-title2 {
+        font-size: 20px; /* Text bada kiya */
+    }
+
+    /* 5. 'Why Choose Us' ko desktop par faila dena (horizontal line) */
+    .features-container {
+        flex-direction: row; /* Mobile ki tarah niche nahi, side-by-side aayenge */
+        justify-content: space-between;
+        gap: 40px;
+        padding: 40px 0px 40px 40px;
+    }
+
+    /* 6. Hero aur Doctor Image ko bada karna */
+    .hero-image {
+      width: 40%;
+        height: 400px; 
+        
+        display: block; 
+    margin-left: auto;
+        border-radius: 800px 0px 0px 800px !important;
+        object-fit: cover;
+        margin-top:-60px;
+        
+        
+    }
+    .float-button2{
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      margin-top: 0px !important;
+      margin-left: 40px;
+      white-space: nowrap;
+      display: inline-block;
+      text-decoration: none;
+      text-align: left;
+      background: white;
+      color:#0b53c1 ;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+     border-radius: 8px;
+     padding: 5px;
+     
+     
+      
+    }
+    .button-wrapper2 {
+      text-align: left;
+      
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    bottom: -50px;    /* Daant ke niche set karne ke liye */
+    z-index: 10;
+}
+  .dental-stats-grid {
+        display: flex;
+        justify-content: space-around; /* Chaaron items ke beech mein barabar space dega */
+        align-items: center;
+        width: 100%;
+        
+        /* Hero image ke theek niche chipkane ke liye */
+        margin-top: 50px; /* Agar aur upar khiskana hai toh ise -20px ya -40px try karein */
+        padding: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        border-radius: 20px;
+    }
+
+    /* Har ek stat item ko barabar width dene ke liye */
+    .dental-stat-item {
+      
+        flex: 1;
+        display: flex;
+        justify-content: center; /* Icon aur text ko center mein laane ke liye */
+        align-items: center;
+        gap: 15px; /* Icon aur numbers ke beech ka space */
+    }
+.dental-stat-item + .dental-stat-item {
+    border-left: 2px solid #dcdcdc; /* Halka grey color ki line */
+    /* Agar line text se ekdum chipak rahi ho toh thodi padding de dijiyega: */
+    /* padding-left: 20px; */ 
+}
+
+
+
+    .doctor-image {
+        width: 100%; 
+    max-width: 350px; 
+        height: 300px;
+         display: block;
+         object-fit: cover;
+         object-position: top;
+       margin-left:70px ;
+    
+    }
+    
+    .doctor-name {
+      width: 100%; 
+    max-width: 245px; 
+        font-size: 20px;
+        padding: 5px 25px;
+        margin-left: 70px;
+        text-align: center;
+    }
+    .doctor-bio {
+    /* Text ko width limit dena, taaki wo lamba na khinche */
+    max-width: 300px; 
+    margin-left: 30px;
+}
+.expert{
+  margin-left: 60px !important;
+}
+.doctor-bio p {
+    /* Line ke beech mein gap dene ke liye (Sabse professional look deta hai) */
+    line-height: 1.6; 
+    
+    /* Text ko dono taraf se barabar (seedha) karne ke liye */
+    text-align: justify; 
+    
+    /* Font ka color thoda soft karne ke liye (Premium feel) */
+    color: #444444; 
+    
+    /* Upar heading se thoda gap */
+    margin-top: 10px; 
+    margin-left: 30px;
+}
+
+    /* 7. Appointment Card ko choura (wide) karna */
+    .appointment20 {
+        width: 700px; /* 300px se badhakar 700px */
+        padding: 30px;
+        border-radius: 20px;
+    }
+    
+    .BookYourAppointment {
+        font-size: 30px;
+    }
+    
+    .button2 {
+        font-size: 20px;
+        padding: 15px 40px;
+    }
+    
+    /* 8. Navbar aur Footer ki spacing aur size badhana */
+    .navbar {
+        padding: 20px 50px;
+    }
+    
+    .logo-text {
+        font-size: 30px;
+    }
+    
+    .teeth-logo {
+        height: 50px;
+        width: 40px;
+    }
+    
+    .quick-links-section h3 {
+        font-size: 24px;
+    }
+    
+    .link-column a {
+        font-size: 18px;
+    }
+    
+    .map-location {
+        height: 300px; /* Map bada dikhega */
+    }
+    
+    .footer-book-btn {
+        font-size: 22px;
+        padding: 20px;
+    }
+}
+/* 📱 1. Mobile par chhupane ke liye (767px ya usse choti screen par kaam karega) */
+@media (max-width: 767px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
+
+/* 💻 2. Desktop par chhupane ke liye (768px ya usse badi screen par kaam karega) */
+@media (min-width: 768px) {
+    .hide-on-desktop {
+        display: none !important;
+    }
+}
