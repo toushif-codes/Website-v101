@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Dental Website</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar" style="position: relative;">
+    
+    <!-- Aapka purana Logo wala section waise hi rahega -->
+    <div class="logo">
+        <img src="Images/Teethlogo.png" class="teeth-logo">
+        <div class="logo-text">
+            <span>Smile</span><span class="care" id="care-top">Care</span>
+            <p class="dental-1">DENTAL CLINIC</p>
+        </div>
+    </div>
+
+    <!-- Burger Icon (Isme id="burger-btn" lagaya hai) -->
+    <div class="menu-icon" id="burger-btn" style="cursor: pointer; font-size: 28px;">
+        &#9776; 
+    </div>
+
+    <!-- Naya Mobile Menu Tab (Jo click pe khulega) -->
+    <div class="mobile-dropdown" id="mobile-menu-tab">
+        <a href="#care-top">Home</a>
+        <a href="#expert">About Us</a>
+        <a href="#treat">Treatments</a>
+        <a href="#serv">Services</a>
+        <a href="tel:+919163826641">Contact Us</a>
+    </div>
+
+</nav>
+
+
+<h5 class= "trust-wala"> Trusted Dental Care </h5>
+  
+  <h1 class="smile-wala hide-on-desktop">
+  Creating Healthy Smiles<br>
+  That Last a<br>
+  
+  <span class="life-time hide-on-desktop">Lifetime</span>
+</h1>
+
+
+
+<p class="gentle-touch hide-on-desktop">We provide comprehensive dental <br>care with modern technology and a<br> gentle touch. </p>
+
+    <div class="main-card">
+        
+<div class="image-wrapper">
+  
+<!-- Class ko <video> tag mein add kiya -->
+<div class="image-hero-wrapper">
+    <img src="Images/Background.png" class="hero-image">
+      <h1 class="smile-wala hide-on-mobile">
+  Creating Healthy<br> Smiles
+  That <br>Last a<br>
+    <span class="life-time hide-on-mobile">Lifetime</span>
+</h1>
+</div>
+
+  
+
+<p class="gentle-touch hide-on-mobile">We provide comprehensive dental <br>care with modern technology and a<br> gentle touch. </p>
+
+
+
+      
+                        <a href="https://wa.me/919163826641"><button class="float-button hide-on-desktop">Book Appointment</button>
+                        </a>
+                        <!-- 💻 NAYA BUTTON: Sirf Desktop ke liye Wrapper ke sath (Mobile pe hide hoga) -->
+<div class="button-wrapper2 hide-on-mobile">
+    <a href="https://wa.me/919163826641" class="float-button2">Book Appointment</a>
+</div>
+</div>
+<div class="dental-stats-grid">
+  
+  <div class="dental-stat-item">
+    <div class="dental-icon">
+      <img src="Images/People.png" class="icon-png1">
+    </div>
+    <div class="dental-text" id="expert">
+      <h3>5,000+</h3>
+      <p>Happy Patients</p>
+    </div>
+  </div>
+
+  <div class="dental-stat-item">
+    <div class="dental-icon">
+            <img src="Images/Experience15.png" class="icon-png2">
+    </div>
+    <div class="dental-text">
+      <h3>15+</h3>
+      <p>Years Experience</p>
+    </div>
+  </div>
+
+  <div class="dental-stat-item">
+    <div class="dental-icon">
+            <img src="Images/Doctor 20.png" class="icon-png3">
+    </div>
+    <div class="dental-text">
+      <h3>20+</h3>
+      <p>Expert Dentists</p>
+    </div>
+  </div>
+
+  <div class="dental-stat-item">
+    <div class="dental-icon">
+            <img src="Images/Star.png" class="icon-png4">
+    </div>
+    <div class="dental-text hide-on-desktop">
+      <h3>4.9 ★</h3>
+      <p>Google Rating</p>
+    </div>
+    <div class="dental-text hide-on-mobile">
+    <!-- Inline CSS se humne isko horizontal aur single line mein lock kar diya hai -->
+    <h3 style="display: flex; align-items: center; gap: 6px; white-space: nowrap;">
+        4.9 <span style="color: #003366;">★</span>
+    </h3>
+    <p>Google Rating</p>
+</div>
+
+  </div>
+
+</div>
+
+
+
+
+
+<div class="doctor-section"style="display: flex; justify-content: flex-start; align-items: flex-start; width: 100%; text-align: left; padding-left: 0;">
+    
+    <!-- Left Column: Sirf Image aur Button ke liye -->
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        
+        <img src="Images/doctor.png" class="doctor-image">
+       
+        <div class="doctor-name" >
+            Doctor Name
+        </div>
+
+    </div>
+
+    <!-- Right Column: Sirf Bio ke liye -->
+    <div class="doctor-bio hide-on-desktop" style="padding-left: 20px;">
+        <h3 class="expert" style="margin: 0;">Expert in dental care</h3>
+        <p style="margin-top: 5px;">Dr.x , BDS, MDS is a dedicated and experienced dental professional committed to delivering exceptional oral healthcare with compassion and precision.</p>
+    </div>
+        <div class="doctor-bio hide-on-mobile" 
+        >
+        <h3 class="expert" style="margin: 0;">Expert in dental care</h3>
+        <p>Dr.x , BDS, MDS is a dedicated and experienced dental professional committed to delivering exceptional oral healthcare with compassion and precision.</p>
+    </div>
+
+</div>
+    
+</div>
+
+
+ <div class="treatment-card" id="treat">
+   
+ <h5 class="real-transformation">REAL TRANSFORMATION</h5>
+ 
+ <h2 style="text-align: center; width: 100%; display: block; font-family: 'Times New Roman', serif; font-size: 20px; color: black; margin-top: 5px; padding-top: 0;">Treatments & Results</h2> 
+
+  
+<div class="treatments-container">
+    <div class="cards-grid">
+        <div class="card1"><img src="Images/Card1.jpg" class="card-image1"></div>
+        <div class="card2"><img src="Images/card2.jpg" class="card-image1"></div>
+        <div class="card3"><img src="Images/card3.jpg" class="card-image1"></div>
+        <div class="card4"><img src="Images/card4.jpg" class="card-image1"></div>
+    </div>
+</div>
+ </div>
+
+
+ <h5 class="what-we-offer">WHAT WE OFFER</h5>
+ <h2 class="service" id="serv" >Services</h2>
+
+
+
+</div>
+ <div class="service-card">
+   <div class="service-contaier">
+    <div class="service-grid">
+        <div class="serv1"><img src="Images/general.png" class="serv-image1">
+        <h4 class="serv-title">General</h4>
+                <h4 class="serv-title2">Check-up</h4>
+
+        </div>
+        <div class="serv2"><img src="Images/Teeth.png" class="serv-image1">
+        
+                <h4 class="serv-title">Teeth</h4>
+        <h4 class="serv-title2">Whitening</h4>
+             </div>
+             
+        <div class="serv3"><img src="Images/Dental-implants.png" class="serv-image1">
+                        <h4 class="serv-title">Dental </h4>
+        <h4 class="serv-title2">Implants</h4>
+        </div>
+        
+        
+        <div class="serv4"><img src="Images/Brace.png" class="serv-image1">
+                               <h4 class="serv-title">Braces & </h4> 
+        <h4 class="serv-title2">Orthodontics</h4>
+        </div>
+        <div class="serv5"><img src="Images/root.png" class="serv-image1">
+         <h4 class="serv-title">Root Canal</h4> 
+        <h4 class="serv-title2">treatment</h4>
+        
+        </div>
+        <div class="serv6"><img src="Images/Whitening.png" class="serv-image1">
+        
+                 <h4 class="serv-title">Teeth Cleaning</h4> 
+        <h4 class="serv-title2">& polishing</h4>
+        
+        </div>
+        <div class="serv7"><img src="Images/Wisdom.png" class="serv-image1">
+                         <h4 class="serv-title">Wisdom Tooth</h4> 
+        <h4 class="serv-title2"> Removal</h4>
+        
+        </div>
+        <div class="serv8"><img src="Images/toothfilling.png" class="serv-image1">
+        
+         <h4 class="serv-title">Tooth Filling</h4>
+
+        
+        </div>
+    </div>
+</div>
+</div>
+
+
+ <div class="choose">
+    <h5 class="choose-us"> WHY CHOOSE US</h5>
+<div class="choose-us-wrapper">
+    
+    <div class="features-container">
+        <!-- Feature 1 -->
+        <div class="feature-box">
+            <div class="feature-icon">
+                <!-- Yahan aap apne icon ki image laga sakte hain -->
+                <img src="Images/tech.png">
+            </div>
+            <div class="feature-text">
+                <h4>Advanced Technology</h4>
+                <p>We use the latest dental technology for accurate diagnosis and treatment.</p>
+            </div>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="feature-box">
+            <div class="feature-icon">
+                <img src="Images/safe.png">
+            </div>
+            <div class="feature-text">
+                <h4>Safe & Painless</h4>
+                <p>Comfortable treatments with minimal discomfort and maximum care.</p>
+            </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-box">
+            <div class="feature-icon">
+                <img src="Images/envo.png">
+            </div>
+            <div class="feature-text">
+                <h4>Hygienic Environment</h4>
+                <p>We maintain the highest standards of hygiene for your safety.</p>
+            </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-box">
+            <div class="feature-icon">
+                <img src="Images/prsnl.png">
+            </div>
+            <div class="feature-text">
+                <h4>Personalized Care</h4>
+                <p>Every smile is unique. We create personalized treatment plans.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+ 
+ <div class="google-review">
+<h5 class="google-review-box">GOOGLE REVIEWS
+</h5>
+  <h2 class="section-title">What Our Patients Say</h2>
+  </div>
+  
+<div class="reviews-section">
+  <!-- Heading Section -->
+
+
+  <!-- Sliding Container -->
+  <div class="slider-container">
+    
+    <!-- Review Card 1 -->
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">Excellent service and very professional staff. My teeth cleaning was totally painless. Highly recommended!</p>
+      <div class="reviewer">
+        <!-- Yahan reviewer ki photo ka path dalein -->
+        <img src="images/patient1.jpg" class="reviewer-img1">
+        <span class="reviewer-name1">y user</span>
+      </div>
+    </div>
+
+    <!-- Review Card 2 (Aise hi aur cards add kar sakte hain) -->
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">Best dental clinic I have ever visited. The doctors are very polite and the clinic is extremely hygienic.</p>
+      <div class="reviewer">
+        <img src="images/patient2.jpg" class="reviewer-img2">
+        <span class="reviewer-name2">z user</span>
+      </div>
+    </div>
+        <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">Highly satisfied with the quality of treatment. The team is knowledgeable, attentive, and the clinic provides a comfortable environment.</p>
+      <div class="reviewer">
+        <img src="images/patient2.jpg"  class="reviewer-img3">
+        <span class="reviewer-name3">x user</span>
+      </div>
+    </div>
+    
+  </div>
+  
+
+  <!-- Pagination Dots (Neeche wale dots) -->
+  <div class="slider-dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</div>
+<script>
+  const slider = document.querySelector('.slider-container');
+  const dots = document.querySelectorAll('.dot');
+  const card = document.querySelector('.review-card'); // Ek card ko select kiya
+
+  slider.addEventListener('scroll', () => {
+    // Card ki chaurai (width) nikalte hain
+    let cardWidth = card.offsetWidth; 
+    let scrollPosition = slider.scrollLeft;
+    
+    // Calculate karte hain ki konsa card center mein hai
+    let activeIndex = Math.round(scrollPosition / cardWidth);
+
+    // Sahi dot ko 'active' class dete hain, baakiyon se hatate hain
+    dots.forEach((dot, index) => {
+      if (index === activeIndex) {
+        dot.classList.add('active'); // Naye dot par blue color aayega
+      } else {
+        dot.classList.remove('active'); // Baki dots se blue color hat jayega
+      }
+    });
+  });
+</script>
+<div class="appointment20">
+  <img src="Images/2ndlast.png" class="appointment2img">
+  <h5 class="BookYourAppointment">Book Your Appointment</h5>
+  <p class="help-you">We're here to help you </p>
+  <p class="help-you2">
+  get the smile you deserve.</p>
+                      <a href="https://wa.me/919163826641"><button class="button2">Book Appointment</button>
+                      </a>
+
+
+  
+</div>
+<footer class="clinic-footer">
+    <div class="footer-container">
+        
+        <!-- Logo aur Title Section -->
+        <div class="brand-section">
+            <!-- Yahan tooth icon ka image path daalein -->
+            <img src="Images/Teethlogo.png" alt="Logo" class="logo-icon">
+            <div class="brand-text">
+                <h2>SmileCare</h2>
+                <p>DENTAL CLINIC</p>
+            </div>
+        </div>
+
+        <!-- Description -->
+        <p class="footer-description">
+            We are dedicated to providing exceptional dental care for you and your family.
+        </p>
+
+        <!-- Social Media Icons (Images) -->
+        <div class="social-links">
+            <!-- Yahan social icons ke images lagayein -->
+            <a href="https://www.facebook.com/share/1BkBZgGrjJ/" class="social-circle"><img src="Images/fb-icon.png" class="fb-icon"></a>
+            <a href="https://www.instagram.com/instagram?igsh=MXgzcDE3MW02Nzg5eg==" class="social-circle"><img src="Images/ig-icon.png" class="ig-icon"></a>
+            <a href="https://youtube.com/@youtube?si=2783uDoSNK54vm96" class="social-circle"><img src="Images/yt-icon.png" class="yt-icon"></a>
+            <a href="https://wa.me/919163826641" class="social-circle"><img src="Images/wa-icon.png" class="wa-icon"></a>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="quick-links-section">
+            <h3>Quick Links</h3>
+            <div class="links-grid">
+                <div class="link-column">
+                    <a href="#care-top">Home</a>
+                    <a href="#serv">Services</a>
+                    <a href="tel:+919163826641">Contact Us</a>
+                </div>
+                <div class="link-column">
+                    <a href="#expert">About Us</a>
+                    <a href="#treat">Results</a>
+                </div>
+                <div class="link-column">
+                    <a href="#treat">Treatments</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Faint Line Divider -->
+        <hr class="footer-divider">
+
+        <!-- Contact Details -->
+        <div class="contact-info">
+            <div class="contact-item">
+                <img src="Images/phone.png" alt="Phone" class="contact-icon">
+                <span>+91 9123021641</span>
+            </div>
+            <div class="contact-item">
+                <img src="Images/email.png" alt="Email" class="contact-icon">
+                <span>info@smilecare.com</span>
+            </div>
+            <div class="contact-item">
+                <img src="Images/location.png" alt="Location" class="contact-icon">
+                <span>123, Dental Street,<br>New Delhi - 110001</span>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="map-placeholder">
+            <!-- Yahan Google Map ka screenshot lagayein -->
+<iframe class="map-location"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.1188718465805!2d77.23844537777158!3d28.65615917565189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfce26ec085ef%3A0x441e32f4fa5002fb!2sRed%20Fort!5e0!3m2!1sen!2sin!4v1783241700435!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          
+        </div>
+
+        <!-- Book Appointment Button -->
+                    <a href="https://wa.me/919163826641"><button class="footer-book-btn">Book Appointment</button>
+                    </a>
+
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>© 2025 SmileCare Dental Clinic.</p>
+            <p>All Rights Reserved.</p>
+        </div>
+
+    </div>
+</footer>
+
+
+
+
+    <!-- Ye code click hone par menu ko show/hide karega -->
+    <script>
+        const burgerBtn = document.getElementById('burger-btn');
+        const mobileMenuTab = document.getElementById('mobile-menu-tab');
+
+        burgerBtn.addEventListener('click', function() {
+            mobileMenuTab.classList.toggle('show-menu');
+        });
+    </script>
+    
+   </body>
+</html>
